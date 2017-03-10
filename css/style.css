@@ -1,0 +1,362 @@
+html {
+	font-size: 62.5%;
+}
+@media screen and (min-width: 1440px) {
+	html {
+		font-size: 66.5%;
+	}
+}
+@media screen and (min-width: 1680px) {
+	html {
+		font-size: 70.5%;
+	}
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+#active {
+	opacity: .25;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	width: 100%;
+	height: 100%;
+	background: url('../tky-layout-assets/bg.png') no-repeat center top #1c0f07;
+	background-size: contain;
+	font-family: Roboto Condensed;
+	letter-spacing: 0.1rem;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	padding-left: 1.5rem;
+	margin-bottom: 0;
+}
+li {
+	padding-bottom: 0.2rem;
+}
+
+/** container ****************************************************************/
+
+.container {
+	max-width: 98.0rem;
+	padding: 0 2.75rem;
+	margin: 0 auto;
+	overflow: auto;
+}
+@media screen and (min-width: 1440px) {
+	.container {
+		max-width: 105.0rem;
+	}
+}
+@media screen and (min-width: 1680px) {
+	.container {
+		max-width: 112.0rem;
+	}
+}
+
+.full {
+	max-width: 100%;
+	padding: 0 0.25rem;
+	overflow: hidden;
+}
+
+.about {
+	width: 33.33%;
+	padding: 0.25rem;
+	float: left;
+	position: relative;
+}
+@media screen and (min-width: 1680px) {
+	.about {
+		width: 25%;
+	}
+}
+
+.two-thirds {
+	width: 66.66%;
+	padding: 0.25rem;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+@media screen and (min-width: 1680px) {
+	.two-thirds {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		padding: 0 1.75rem;
+		max-width: 72.0rem;
+	}
+	.two-thirds {
+		width: 100%;
+		position: relative;
+		text-align: center;
+	}
+	.about {
+		width: 100%;
+		position: relative;
+	}
+}
+
+
+.one-third {
+		width: 100%;
+		text-align: center;
+}
+@media screen and (min-width: 600px) {
+	.one-third {
+		width: 50%;
+		float: left;
+		padding: 0.25rem;
+		position: relative;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.one-third {
+		width: 33.33%;
+	}
+}
+@media screen and (min-width: 1680px) {
+	.one-third {
+		width: 25%;
+	}
+}
+
+/** nav  ****************************************************************/
+
+nav {
+	margin: 6.6rem 0 4rem;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	nav {
+		margin: 5.0rem 0 3rem;
+	}
+}
+
+#logo-box {
+	display: inline-block;
+	margin: 0 6.5rem 0 0;
+}
+
+#logo {
+	max-width: 14.5rem;
+	display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+	#logo-box {
+		width: 100%;
+		text-align: center;
+		margin: 0 0 4.0rem 0;
+	}
+	#logo {
+		max-width: 17rem;
+	}
+}
+
+#links {
+	overflow: hidden;
+	display: inline-block;
+	float: right;
+	margin-top: 3rem
+}
+
+.link {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 3.0rem 0 0;
+	max-width: 4.2rem;
+	opacity: 1;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+.link:last-of-type {
+	margin-right: 0;
+}
+
+.link:hover {
+	opacity: .75;
+}
+
+@media screen and (max-width: 768px) {
+	#links {
+		margin-top: 0;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#links {
+		width: 100%;
+		text-align: center;
+	}
+	.link {
+		margin: 0 1.75rem 0 0;
+		max-width: 3.5rem;
+	}
+}
+/** spotlight  ****************************************************************/
+
+section.spotlight {
+	margin: 0 0 8rem;
+}
+
+@media screen and (max-width: 768px) {
+	section.spotlight {
+		margin: 0 0 6.0rem 0;
+	}
+}
+
+.label {
+	background: #8fffd1;
+	width: 100%;
+	padding: 1.5rem 2.5rem;
+	font-size: 1.8rem;
+	line-height: 120%;
+	font-weight: 700;
+	margin: 0 0 0.5rem 0;
+	text-transform: uppercase;
+}
+
+.label#main-title {
+	font-size: 2.2rem;
+	background: #fff;
+}
+
+#content-description {
+	background: rgba(255, 255, 255, 0.8);
+	max-width: 100%;
+	padding: 2.5rem 2.5rem;
+	letter-spacing: 0;
+	font-size: 1.4rem;
+	line-height: 150%;
+	font-weight: 400;
+	margin: 0;
+}
+
+#content-description-index {
+	background: rgba(255, 255, 255, 0.8);
+	max-width: 100%;
+	padding: 2.5rem 2.5rem;
+	letter-spacing: 0;
+	font-size: 1.6rem;
+	line-height: 150%;
+	font-weight: 400;
+	margin: 0;
+}
+
+.play-button {
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	display: none;
+}
+@media screen and (min-width: 376px) {
+	.play-button {
+		display: block;
+	}
+}
+.play-button:hover {
+	opacity: .5;
+}
+
+.align-spacer {
+	height: 100%;
+	width: .1rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.btn-play {
+	margin-top: -2.0rem;
+	max-width: 14.0rem;
+	display: inline-block;
+	vertical-align: middle;
+	opacity: 1;
+}
+
+.subvideo {
+	position: relative;
+	margin-bottom: .3rem
+}
+
+.show-vimeo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 8;
+}
+
+.cycle-slideshow {
+	z-index: 1;
+}
+
+.vimeo {
+	width: 100%;
+	height: 100%;
+	background: #0d0d0d;
+}
+
+@media screen and (min-width: 376px) {
+	.vimeo-mobile {
+		display: none;
+	}
+}
+
+/** thumbs  ****************************************************************/
+
+section.thumbs {
+
+}
+
+.thumb {
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	opacity: .7;
+	cursor: pointer;
+}
+.thumb:hover {
+	opacity: 1;
+}
+@media screen and (max-width: 600px) {
+	.thumb {
+		margin-bottom: .5rem;
+	}
+}
+
+footer {
+	height: 8.0rem;
+}
